@@ -1,0 +1,14 @@
+:root{ --ead-accent:#3a60ff; }
+body.login{ background: #0f172a; }
+#loginform{
+  border-radius: 12px;
+  border: 1px solid rgba(255,255,255,0.08);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+#login .button-primary{
+  background: var(--ead-accent);
+  border-color: var(--ead-accent);
+}
+.login #backtoblog a, .login #nav a{
+  color: #cbd5e1;
+}
