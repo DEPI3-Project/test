@@ -1,0 +1,264 @@
+# Easy Admin Theme Language Template
+# Copyright (C) 2024 Easy Admin Theme Team
+# This file is distributed under the same license as the Easy Admin Theme package.
+msgid ""
+msgstr ""
+"Project-Id-Version: Easy Admin Theme 1.0.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-10-21 12:00+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+
+#: easy-admin-theme.php
+msgid "Easy Admin Theme Settings"
+msgstr ""
+
+#: easy-admin-theme.php
+msgid "Easy Admin Theme"
+msgstr ""
+
+#: easy-admin-theme.php
+msgid "Welcome to your enhanced WordPress dashboard!"
+msgstr ""
+
+#: easy-admin-theme.php
+msgid "Thank you for using %s Easy Admin Theme %s"
+msgstr ""
+
+#: easy-admin-theme.php
+msgid "WordPress & Easy Admin Theme"
+msgstr ""
+
+#: includes/class-settings.php
+msgid "Appearance"
+msgstr ""
+
+#: includes/class-settings.php
+msgid "Color Scheme"
+msgstr ""
+
+#: includes/class-settings.php
+msgid "Blue"
+msgstr ""
+
+#: includes/class-settings.php
+msgid "Green"
+msgstr ""
+
+#: includes/class-settings.php
+msgid "Purple"
+msgstr ""
+
+#: includes/class-settings.php
+msgid "Orange"
+msgstr ""
+
+#: includes/class-settings.php
+msgid "Dark"
+msgstr ""
+
+#: includes/class-settings.php
+msgid "Choose your preferred color scheme for the admin interface."
+msgstr ""
+
+#: includes/class-settings.php
+msgid "Custom Logo URL"
+msgstr ""
+
+#: includes/class-settings.php
+msgid "Enter a URL for your custom logo to replace the WordPress logo."
+msgstr ""
+
+#: includes/class-settings.php
+msgid "Layout Options"
+msgstr ""
+
+#: includes/class-settings.php
+msgid "Compact Menu"
+msgstr ""
+
+#: includes/class-settings.php
+msgid "Enable compact menu layout"
+msgstr ""
+
+#: includes/class-settings.php
+msgid "Reduces the size of the admin menu for more content space."
+msgstr ""
+
+#: includes/class-settings.php
+msgid "Hide Admin Bar"
+msgstr ""
+
+#: includes/class-settings.php
+msgid "Hide admin bar on frontend"
+msgstr ""
+
+#: includes/class-settings.php
+msgid "Hides the admin bar when viewing the frontend of your site."
+msgstr ""
+
+#: includes/class-settings.php
+msgid "Dashboard"
+msgstr ""
+
+#: includes/class-settings.php
+msgid "Welcome Message"
+msgstr ""
+
+#: includes/class-settings.php
+msgid "Custom welcome message displayed on the dashboard."
+msgstr ""
+
+#: includes/class-settings.php
+msgid "Save Settings"
+msgstr ""
+
+#: includes/class-dashboard.php
+msgid "Welcome"
+msgstr ""
+
+#: includes/class-dashboard.php
+msgid "Quick Stats"
+msgstr ""
+
+#: includes/class-dashboard.php
+msgid "Recent Activity"
+msgstr ""
+
+#: includes/class-dashboard.php
+msgid "Quick Actions"
+msgstr ""
+
+#: includes/class-dashboard.php
+msgid "Hello, %s!"
+msgstr ""
+
+#: includes/class-dashboard.php
+msgid "New Post"
+msgstr ""
+
+#: includes/class-dashboard.php
+msgid "New Page"
+msgstr ""
+
+#: includes/class-dashboard.php
+msgid "Media Library"
+msgstr ""
+
+#: includes/class-dashboard.php
+msgid "Published Posts"
+msgstr ""
+
+#: includes/class-dashboard.php
+msgid "Published Pages"
+msgstr ""
+
+#: includes/class-dashboard.php
+msgid "Approved Comments"
+msgstr ""
+
+#: includes/class-dashboard.php
+msgid "Total Users"
+msgstr ""
+
+#: includes/class-dashboard.php
+msgid "Recent Posts"
+msgstr ""
+
+#: includes/class-dashboard.php
+msgid "Recent Comments"
+msgstr ""
+
+#: includes/class-dashboard.php
+msgid "ago"
+msgstr ""
+
+#: includes/class-dashboard.php
+msgid "by %s"
+msgstr ""
+
+#: includes/class-dashboard.php
+msgid "No recent posts found."
+msgstr ""
+
+#: includes/class-dashboard.php
+msgid "No recent comments found."
+msgstr ""
+
+#: includes/class-dashboard.php
+msgid "Write Post"
+msgstr ""
+
+#: includes/class-dashboard.php
+msgid "Create Page"
+msgstr ""
+
+#: includes/class-dashboard.php
+msgid "Upload Media"
+msgstr ""
+
+#: includes/class-dashboard.php
+msgid "Moderate Comments"
+msgstr ""
+
+#: includes/class-dashboard.php
+msgid "Customize Theme"
+msgstr ""
+
+#: includes/class-dashboard.php
+msgid "Manage Plugins"
+msgstr ""
+
+#: includes/class-menu-manager.php
+msgid "Blog Posts"
+msgstr ""
+
+#: includes/class-menu-manager.php
+msgid "Pages"
+msgstr ""
+
+#: includes/class-menu-manager.php
+msgid "Comments"
+msgstr ""
+
+#: includes/class-menu-manager.php
+msgid "Users"
+msgstr ""
+
+#: includes/class-menu-manager.php
+msgid "Tools"
+msgstr ""
+
+#: includes/class-menu-manager.php
+msgid "Settings"
+msgstr ""
+
+#: includes/class-customizer.php
+msgid "Primary Color"
+msgstr ""
+
+#: includes/class-customizer.php
+msgid "Secondary Color"
+msgstr ""
+
+#: includes/class-customizer.php
+msgid "Admin Bar Color"
+msgstr ""
+
+#: includes/class-customizer.php
+msgid "Enable Dark Mode"
+msgstr ""
+
+#: includes/class-customizer.php
+msgid "Custom CSS"
+msgstr ""
+
+#: includes/class-customizer.php
+msgid "Add custom CSS for additional styling"
+msgstr ""
