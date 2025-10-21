@@ -1,0 +1,73 @@
+:root{--ae-bg:#0f1520;--ae-bg-soft:#111827;--ae-panel:#111827;--ae-border:#1f2937;--ae-text:#e5e7eb;--ae-text-soft:#cbd5e1;--ae-accent:#60a5fa;--ae-accent-strong:#3b82f6;--ae-focus:#93c5fd;--ae-danger:#ef4444;--ae-success:#22c55e;}
+
+/* Light mode via prefers-color-scheme */
+@media (prefers-color-scheme: light){
+  :root{--ae-bg:#f8fafc;--ae-bg-soft:#f1f5f9;--ae-panel:#ffffff;--ae-border:#e5e7eb;--ae-text:#0f172a;--ae-text-soft:#334155;--ae-accent:#2563eb;--ae-accent-strong:#1d4ed8;--ae-focus:#93c5fd;}
+}
+
+/* Force light/dark scheme if chosen */
+body.wp-admin.adminease-scheme-dark{
+  --ae-bg:#0f1520;--ae-bg-soft:#111827;--ae-panel:#111827;--ae-border:#1f2937;--ae-text:#e5e7eb;--ae-text-soft:#cbd5e1;--ae-accent:#60a5fa;--ae-accent-strong:#3b82f6;--ae-focus:#93c5fd;
+}
+body.wp-admin.adminease-scheme-light{
+  --ae-bg:#f8fafc;--ae-bg-soft:#f1f5f9;--ae-panel:#ffffff;--ae-border:#e5e7eb;--ae-text:#0f172a;--ae-text-soft:#334155;--ae-accent:#2563eb;--ae-accent-strong:#1d4ed8;--ae-focus:#93c5fd;
+}
+
+/* Core layout */
+body.wp-admin.adminease-compact #wpbody-content{padding-top:10px}
+body.wp-admin{background:var(--ae-bg)}
+#wpcontent,#wpbody{background:transparent}
+#wpbody-content .wrap>h1{color:var(--ae-text)}
+
+/* Admin menu */
+#adminmenu, #adminmenu .wp-submenu, #adminmenuback, #adminmenuwrap{background:var(--ae-bg-soft)}
+#adminmenu .wp-submenu{background:var(--ae-bg)}
+#adminmenu div.wp-menu-name, #adminmenu .wp-submenu a{color:var(--ae-text-soft)}
+#adminmenu a.menu-top{color:var(--ae-text)}
+#adminmenu li.menu-top:hover, #adminmenu li.opensub>a.menu-top{background:linear-gradient(90deg, rgba(96,165,250,.15), transparent)}
+#adminmenu .wp-has-current-submenu .wp-submenu .wp-submenu-head,
+#adminmenu .wp-menu-open a.menu-top, #adminmenu .current a.menu-top{background:linear-gradient(90deg, rgba(96,165,250,.25), transparent); color:var(--ae-text)}
+#adminmenu .awaiting-mod, #adminmenu .update-plugins{background:var(--ae-danger)}
+
+/* Toolbar */
+#wpadminbar{background:var(--ae-bg-soft); border-bottom:1px solid var(--ae-border)}
+#wpadminbar .ab-item, #wpadminbar a.ab-item{color:var(--ae-text-soft)}
+#wpadminbar .ab-item:hover{color:var(--ae-text)}
+
+/* Panels */
+.wrap .postbox, .wrap .stuffbox{background:var(--ae-panel); border:1px solid var(--ae-border); box-shadow:none}
+.postbox .hndle, .stuffbox .hndle{color:var(--ae-text)}
+#dashboard-widgets .postbox h2.hndle{font-weight:600}
+
+/* Forms and buttons */
+input[type=text], input[type=search], input[type=url], input[type=email], input[type=number], textarea, select{
+  background:var(--ae-panel); color:var(--ae-text); border:1px solid var(--ae-border); box-shadow:none; border-radius:8px
+}
+.wp-core-ui .button, .wp-core-ui .button-primary, .wp-core-ui .button-secondary{
+  border-radius:8px; border:1px solid var(--ae-border)
+}
+.wp-core-ui .button-primary{background:var(--ae-accent); border-color:var(--ae-accent-strong); box-shadow:none}
+.wp-core-ui .button-primary:hover{background:var(--ae-accent-strong)}
+
+/* Tables */
+.wp-list-table th, .wp-list-table td{border-bottom:1px solid var(--ae-border)}
+.wp-list-table thead th{background:var(--ae-bg-soft); color:var(--ae-text-soft)}
+
+/* Notices */
+.notice{border-radius:10px}
+.notice-success{border-color:transparent; background:rgba(34,197,94,.15)}
+.notice-warning{border-color:transparent; background:rgba(245,158,11,.15)}
+.notice-error{border-color:transparent; background:rgba(239,68,68,.15)}
+
+/* Focus rings */
+*:focus{outline:2px solid var(--ae-focus); outline-offset:2px}
+
+/* Typography */
+body.wp-admin, #wpadminbar *{font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji"}
+
+/* Compact mode */
+body.wp-admin.adminease-compact .wrap .postbox .inside{padding:10px}
+body.wp-admin.adminease-compact .wp-core-ui .button{padding:.25rem .6rem}
+body.wp-admin.adminease-compact #adminmenu .wp-submenu a{padding:.3rem .9rem}
+
+/* Login color variables injected separately */
