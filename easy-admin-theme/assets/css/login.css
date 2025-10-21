@@ -1,0 +1,368 @@
+/*!
+ * Easy Admin Theme - Login Page Styles
+ * Version: 1.0.0
+ */
+
+/* Login Page Enhancement */
+body.login {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background-attachment: fixed;
+    position: relative;
+    overflow-x: hidden;
+}
+
+body.login::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grid" width="20" height="20" patternUnits="userSpaceOnUse"><path d="M 20 0 L 0 0 0 20" fill="none" stroke="rgba(255,255,255,0.1)" stroke-width="0.5"/></pattern></defs><rect width="100" height="100" fill="url(%23grid)"/></svg>');
+    opacity: 0.3;
+    z-index: -1;
+}
+
+/* Login Form Container */
+#login {
+    width: 400px;
+    padding: 8% 0 0;
+    margin: auto;
+    position: relative;
+}
+
+#loginform {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(20px);
+    border-radius: 16px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 40px;
+    margin-bottom: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+#loginform::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, #667eea, #764ba2);
+}
+
+/* Logo Enhancement */
+#login h1 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#login h1 a {
+    background-image: none;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: #2c3e50;
+    font-size: 28px;
+    font-weight: 700;
+    text-decoration: none;
+    width: auto;
+    height: auto;
+    text-indent: 0;
+    overflow: visible;
+    display: inline-block;
+    position: relative;
+}
+
+#login h1 a::before {
+    content: "🚀";
+    font-size: 32px;
+    margin-right: 10px;
+}
+
+#login h1 a:hover {
+    color: #667eea;
+    transform: scale(1.05);
+    transition: all 0.3s ease;
+}
+
+/* Form Labels */
+#loginform label {
+    color: #2c3e50;
+    font-weight: 600;
+    font-size: 14px;
+    margin-bottom: 8px;
+    display: block;
+}
+
+/* Form Inputs */
+#loginform input[type="text"],
+#loginform input[type="password"],
+#loginform input[type="email"] {
+    background: rgba(255, 255, 255, 0.9);
+    border: 2px solid #e1e5e9;
+    border-radius: 12px;
+    padding: 15px 20px;
+    font-size: 16px;
+    width: 100%;
+    box-sizing: border-box;
+    transition: all 0.3s ease;
+    margin-bottom: 20px;
+}
+
+#loginform input[type="text"]:focus,
+#loginform input[type="password"]:focus,
+#loginform input[type="email"]:focus {
+    border-color: #667eea;
+    box-shadow: 0 0 0 4px rgba(102, 126, 234, 0.1);
+    outline: none;
+    background: rgba(255, 255, 255, 1);
+}
+
+/* Submit Button */
+#loginform .wp-core-ui #wp-submit {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border: none;
+    border-radius: 12px;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 15px 30px;
+    width: 100%;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 20px;
+}
+
+#loginform .wp-core-ui #wp-submit:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px rgba(102, 126, 234, 0.3);
+}
+
+#loginform .wp-core-ui #wp-submit:active {
+    transform: translateY(0);
+}
+
+/* Remember Me Checkbox */
+#loginform .forgetmenot {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#loginform .forgetmenot input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    margin-right: 10px;
+    accent-color: #667eea;
+}
+
+#loginform .forgetmenot label {
+    margin: 0;
+    color: #6c757d;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+/* Links */
+#login #nav,
+#login #backtoblog {
+    text-align: center;
+    margin: 15px 0;
+}
+
+#login #nav a,
+#login #backtoblog a {
+    color: rgba(255, 255, 255, 0.9);
+    text-decoration: none;
+    font-weight: 500;
+    padding: 8px 16px;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    transition: all 0.3s ease;
+    display: inline-block;
+    margin: 0 5px;
+}
+
+#login #nav a:hover,
+#login #backtoblog a:hover {
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    transform: translateY(-2px);
+}
+
+/* Error Messages */
+#login .message,
+#login #login_error {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(20px);
+    border-radius: 12px;
+    border-left: 4px solid #dc3545;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+#login .message {
+    border-left-color: #28a745;
+}
+
+#login .message p,
+#login #login_error p {
+    margin: 0;
+    color: #2c3e50;
+    font-weight: 500;
+}
+
+/* Loading State */
+#loginform.loading #wp-submit {
+    background: #6c757d;
+    cursor: not-allowed;
+    position: relative;
+}
+
+#loginform.loading #wp-submit::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 20px;
+    height: 20px;
+    margin: -10px 0 0 -10px;
+    border: 2px solid transparent;
+    border-top-color: white;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    to { transform: rotate(360deg); }
+}
+
+/* Responsive Design */
+@media screen and (max-width: 480px) {
+    #login {
+        width: 90%;
+        padding: 5% 0 0;
+    }
+    
+    #loginform {
+        padding: 30px 20px;
+        border-radius: 12px;
+    }
+    
+    #login h1 a {
+        font-size: 24px;
+    }
+    
+    #loginform input[type="text"],
+    #loginform input[type="password"],
+    #loginform input[type="email"] {
+        padding: 12px 15px;
+        font-size: 14px;
+    }
+    
+    #loginform .wp-core-ui #wp-submit {
+        padding: 12px 25px;
+        font-size: 14px;
+    }
+}
+
+/* High Contrast Mode */
+@media (prefers-contrast: high) {
+    body.login {
+        background: #000000;
+    }
+    
+    #loginform {
+        background: #ffffff;
+        border: 2px solid #000000;
+    }
+    
+    #loginform input[type="text"],
+    #loginform input[type="password"],
+    #loginform input[type="email"] {
+        border: 2px solid #000000;
+        background: #ffffff;
+        color: #000000;
+    }
+    
+    #loginform .wp-core-ui #wp-submit {
+        background: #000000;
+        color: #ffffff;
+        border: 2px solid #000000;
+    }
+}
+
+/* Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}
+
+/* Focus Indicators */
+#loginform input:focus,
+#loginform .wp-core-ui #wp-submit:focus {
+    outline: 2px solid #667eea;
+    outline-offset: 2px;
+}
+
+/* Custom Animations */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+#loginform {
+    animation: fadeInUp 0.6s ease-out;
+}
+
+#login #nav,
+#login #backtoblog {
+    animation: fadeInUp 0.8s ease-out;
+}
+
+/* Language Switcher */
+.language-switcher {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.language-switcher select {
+    background: rgba(255, 255, 255, 0.9);
+    border: 2px solid #e1e5e9;
+    border-radius: 8px;
+    padding: 8px 12px;
+    font-size: 14px;
+    color: #2c3e50;
+}
+
+/* Privacy Policy Link */
+.privacy-policy-page-link {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.privacy-policy-page-link a {
+    color: rgba(255, 255, 255, 0.8);
+    text-decoration: none;
+    font-size: 12px;
+}
+
+.privacy-policy-page-link a:hover {
+    color: white;
+}
