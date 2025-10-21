@@ -1,4 +1,9 @@
 /*
+Theme Name: Modern Admin Dashboard
+Description: A clean, modern, and user-friendly WordPress admin theme that enhances the dashboard experience with intuitive navigation, beautiful design, and improved usability.
+Version: 1.0.0
+Author: Modern Admin Team
+Text Domain: modern-admin
 Theme Name: Modern Admin Pro
 Description: A modern, user-friendly WordPress admin dashboard theme with clean design and intuitive navigation. Easy to learn, use, and remember.
 Version: 1.0.0
@@ -15,6 +20,11 @@ Text Domain: modern-admin-pro
 
 body {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    line-height: 1.6;
+    color: #2c3e50;
+    background: #f8f9fa;
+    margin: 0;
+    padding: 0;
     background: #f8fafc;
     color: #334155;
     line-height: 1.6;
@@ -23,6 +33,34 @@ body {
 /* Admin Bar Styling */
 #wpadminbar {
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    height: 46px;
+}
+
+#wpadminbar .ab-item,
+#wpadminbar .ab-empty-item,
+#wpadminbar a.ab-item,
+#wpadminbar > #wp-toolbar > #wp-admin-bar-root-default .ab-item {
+    color: #ffffff !important;
+    text-shadow: none;
+}
+
+#wpadminbar .ab-item:hover,
+#wpadminbar .ab-empty-item:hover,
+#wpadminbar a.ab-item:hover {
+    background: rgba(255,255,255,0.1) !important;
+    color: #ffffff !important;
+}
+
+/* Main Admin Area */
+#wpbody {
+    background: #f8f9fa;
+    padding: 0;
+}
+
+#wpcontent {
+    margin-left: 0;
+    padding: 20px;
     height: 46px;
     box-shadow: 0 2px 10px rgba(0,0,0,0.1);
 }
@@ -45,6 +83,9 @@ body {
 /* Admin Menu Styling */
 #adminmenu {
     background: #ffffff;
+    box-shadow: 2px 0 10px rgba(0,0,0,0.1);
+    width: 220px;
+    border-right: 1px solid #e9ecef;
     border-right: 1px solid #e2e8f0;
     box-shadow: 2px 0 10px rgba(0,0,0,0.05);
     width: 220px;
@@ -52,6 +93,17 @@ body {
 
 #adminmenu .wp-menu-name {
     font-weight: 500;
+    font-size: 14px;
+}
+
+#adminmenu .wp-submenu {
+    background: #f8f9fa;
+    border-left: 3px solid #667eea;
+    box-shadow: inset 0 0 0 1px #e9ecef;
+}
+
+#adminmenu .wp-submenu a {
+    color: #6c757d;
     color: #475569;
 }
 
@@ -77,6 +129,134 @@ body {
 }
 
 #adminmenu .wp-submenu a:hover {
+    background: #e9ecef;
+    color: #667eea;
+}
+
+#adminmenu .wp-has-current-submenu .wp-submenu a {
+    color: #495057;
+}
+
+#adminmenu .wp-has-current-submenu .wp-submenu a:hover {
+    background: #e3f2fd;
+    color: #1976d2;
+}
+
+/* Current Menu Item Styling */
+#adminmenu .current,
+#adminmenu .wp-has-current-submenu {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: #ffffff;
+}
+
+#adminmenu .current .wp-menu-name,
+#adminmenu .wp-has-current-submenu .wp-menu-name {
+    color: #ffffff;
+}
+
+#adminmenu .current .wp-menu-arrow,
+#adminmenu .wp-has-current-submenu .wp-menu-arrow {
+    color: #ffffff;
+}
+
+/* Menu Icons */
+#adminmenu .wp-menu-image:before {
+    font-size: 18px;
+    color: #6c757d;
+    transition: color 0.3s ease;
+}
+
+#adminmenu .current .wp-menu-image:before,
+#adminmenu .wp-has-current-submenu .wp-menu-image:before {
+    color: #ffffff;
+}
+
+#adminmenu .wp-menu-item:hover .wp-menu-image:before {
+    color: #667eea;
+}
+
+/* Dashboard Widgets */
+.postbox {
+    background: #ffffff;
+    border: 1px solid #e9ecef;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    margin-bottom: 20px;
+}
+
+.postbox .hndle {
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    border-bottom: 1px solid #e9ecef;
+    color: #495057;
+    font-weight: 600;
+    padding: 15px 20px;
+    border-radius: 8px 8px 0 0;
+}
+
+.postbox .inside {
+    padding: 20px;
+}
+
+/* Dashboard Welcome Panel */
+.welcome-panel {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border: none;
+    border-radius: 12px;
+    color: #ffffff;
+    margin-bottom: 30px;
+    padding: 30px;
+    box-shadow: 0 4px 20px rgba(102, 126, 234, 0.3);
+}
+
+.welcome-panel h2 {
+    color: #ffffff;
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.welcome-panel p {
+    color: rgba(255,255,255,0.9);
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.welcome-panel .welcome-panel-column {
+    color: rgba(255,255,255,0.9);
+}
+
+/* Buttons */
+.button-primary {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border: none;
+    border-radius: 6px;
+    color: #ffffff;
+    font-weight: 500;
+    padding: 10px 20px;
+    text-shadow: none;
+    box-shadow: 0 2px 4px rgba(102, 126, 234, 0.3);
+    transition: all 0.3s ease;
+}
+
+.button-primary:hover {
+    background: linear-gradient(135deg, #5a6fd8 0%, #6a4190 100%);
+    box-shadow: 0 4px 8px rgba(102, 126, 234, 0.4);
+    transform: translateY(-1px);
+}
+
+.button-secondary {
+    background: #ffffff;
+    border: 1px solid #e9ecef;
+    border-radius: 6px;
+    color: #6c757d;
+    font-weight: 500;
+    padding: 10px 20px;
+    transition: all 0.3s ease;
+}
+
+.button-secondary:hover {
+    background: #f8f9fa;
+    border-color: #667eea;
+    color: #667eea;
     color: #667eea;
     background: #e0e7ff;
 }
@@ -215,6 +395,66 @@ select:focus {
 /* Tables */
 .wp-list-table {
     background: #ffffff;
+    border: 1px solid #e9ecef;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.wp-list-table th {
+    background: #f8f9fa;
+    border-bottom: 1px solid #e9ecef;
+    color: #495057;
+    font-weight: 600;
+    padding: 15px 10px;
+}
+
+.wp-list-table td {
+    border-bottom: 1px solid #f1f3f4;
+    padding: 15px 10px;
+}
+
+.wp-list-table tr:hover {
+    background: #f8f9fa;
+}
+
+/* Form Elements */
+.form-table th {
+    color: #495057;
+    font-weight: 600;
+    padding: 20px 10px 20px 0;
+    width: 200px;
+}
+
+.form-table td {
+    padding: 20px 10px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="url"],
+input[type="number"],
+select,
+textarea {
+    border: 1px solid #e9ecef;
+    border-radius: 6px;
+    padding: 10px 15px;
+    font-size: 14px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    width: 100%;
+    max-width: 400px;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="url"]:focus,
+input[type="number"]:focus,
+select:focus,
+textarea:focus {
+    border-color: #667eea;
+    box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+    outline: none;
     border-radius: 12px;
     box-shadow: 0 4px 20px rgba(0,0,0,0.05);
     overflow: hidden;
@@ -240,6 +480,98 @@ select:focus {
 
 /* Notices */
 .notice {
+    border-left: 4px solid #667eea;
+    border-radius: 0 6px 6px 0;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    margin: 20px 0;
+    padding: 15px 20px;
+}
+
+.notice-success {
+    border-left-color: #28a745;
+    background: #d4edda;
+}
+
+.notice-warning {
+    border-left-color: #ffc107;
+    background: #fff3cd;
+}
+
+.notice-error {
+    border-left-color: #dc3545;
+    background: #f8d7da;
+}
+
+/* Media Library */
+.media-frame {
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+}
+
+.media-frame-title {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: #ffffff;
+    border-radius: 8px 8px 0 0;
+}
+
+/* Login Page Styling */
+.login {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+}
+
+.login h1 a {
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><text y=".9em" font-size="90">🚀</text></svg>') no-repeat center;
+    background-size: contain;
+    width: 100px;
+    height: 100px;
+    margin: 0 auto 20px;
+}
+
+.login form {
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    padding: 40px;
+    margin: 0 auto;
+    max-width: 400px;
+}
+
+.login .button-primary {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border: none;
+    border-radius: 6px;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 600;
+    height: 50px;
+    line-height: 1;
+    padding: 0 30px;
+    text-shadow: none;
+    width: 100%;
+}
+
+.login .button-primary:hover {
+    background: linear-gradient(135deg, #5a6fd8 0%, #6a4190 100%);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
+}
+
+.login input[type="text"],
+.login input[type="password"] {
+    border: 2px solid #e9ecef;
+    border-radius: 8px;
+    font-size: 16px;
+    height: 50px;
+    margin-bottom: 20px;
+    padding: 0 20px;
+    transition: border-color 0.3s ease;
+}
+
+.login input[type="text"]:focus,
+.login input[type="password"]:focus {
+    border-color: #667eea;
+    box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
     border-radius: 8px;
     padding: 15px 20px;
     margin: 20px 0;
@@ -331,6 +663,7 @@ select:focus {
 @media (max-width: 782px) {
     #adminmenu {
         width: 100%;
+        position: relative;
         position: fixed;
         top: 46px;
         left: -100%;
@@ -345,6 +678,67 @@ select:focus {
     
     #wpcontent {
         margin-left: 0;
+        padding: 10px;
+    }
+    
+    .welcome-panel {
+        padding: 20px;
+    }
+    
+    .welcome-panel h2 {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 600px) {
+    .login form {
+        margin: 20px;
+        padding: 30px 20px;
+    }
+    
+    .welcome-panel {
+        padding: 15px;
+    }
+    
+    .welcome-panel h2 {
+        font-size: 20px;
+    }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #c1c1c1;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #a8a8a8;
+}
+
+/* Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.postbox,
+.welcome-panel {
+    animation: fadeIn 0.6s ease-out;
     }
     
     #wpbody-content {
@@ -455,6 +849,8 @@ select:focus {
 /* Focus States for Accessibility */
 .button:focus,
 input:focus,
+select:focus,
+textarea:focus {
 textarea:focus,
 select:focus {
     outline: 2px solid #667eea;
@@ -465,6 +861,12 @@ select:focus {
 @media print {
     #adminmenu,
     #wpadminbar,
+    .welcome-panel {
+        display: none;
+    }
+    
+    #wpcontent {
+        margin-left: 0;
     .button {
         display: none !important;
     }
